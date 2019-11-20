@@ -1,0 +1,11 @@
+/Users/Heidi/workspace/CSharpDemos/LinqedListPractice/bin/Debug/netcoreapp3.0/LinqedListPractice
+/Users/Heidi/workspace/CSharpDemos/LinqedListPractice/bin/Debug/netcoreapp3.0/LinqedListPractice.deps.json
+/Users/Heidi/workspace/CSharpDemos/LinqedListPractice/bin/Debug/netcoreapp3.0/LinqedListPractice.runtimeconfig.json
+/Users/Heidi/workspace/CSharpDemos/LinqedListPractice/bin/Debug/netcoreapp3.0/LinqedListPractice.runtimeconfig.dev.json
+/Users/Heidi/workspace/CSharpDemos/LinqedListPractice/bin/Debug/netcoreapp3.0/LinqedListPractice.dll
+/Users/Heidi/workspace/CSharpDemos/LinqedListPractice/bin/Debug/netcoreapp3.0/LinqedListPractice.pdb
+/Users/Heidi/workspace/CSharpDemos/LinqedListPractice/obj/Debug/netcoreapp3.0/LinqedListPractice.csprojAssemblyReference.cache
+/Users/Heidi/workspace/CSharpDemos/LinqedListPractice/obj/Debug/netcoreapp3.0/LinqedListPractice.AssemblyInfoInputs.cache
+/Users/Heidi/workspace/CSharpDemos/LinqedListPractice/obj/Debug/netcoreapp3.0/LinqedListPractice.AssemblyInfo.cs
+/Users/Heidi/workspace/CSharpDemos/LinqedListPractice/obj/Debug/netcoreapp3.0/LinqedListPractice.dll
+/Users/Heidi/workspace/CSharpDemos/LinqedListPractice/obj/Debug/netcoreapp3.0/LinqedListPractice.pdb
