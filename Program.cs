@@ -186,21 +186,6 @@ namespace LinqedListPractice
                 Console.WriteLine(item);
             }
 
-        }
-    }
-
-    // Build a collection of customers who are millionaires
-    public class Customer
-    {
-        public string Name { get; set; }
-        public double Balance { get; set; }
-        public string Bank { get; set; }
-    }
-
-    public class Bank
-    {
-        public static void Main()
-        {
             List<Customer> customers = new List<Customer>()
             {
                 new Customer() { Name = "Bob Lesman", Balance = 80345.66, Bank = "FTB" },
@@ -223,12 +208,22 @@ namespace LinqedListPractice
             {
                 Console.WriteLine($"{group.Key} has {group.Count()} customers");
 
+                foreach (Customer customer in group)
+                {
+                    Console.WriteLine($"****{customer.Name}");
+
+                }
             }
 
-            foreach (Customer customer in groups)
-            {
-                Console.WriteLine($"****{customer.Name}");
-            }
         }
     }
+
+    // Build a collection of customers who are millionaires
+    public class Customer
+    {
+        public string Name { get; set; }
+        public double Balance { get; set; }
+        public string Bank { get; set; }
+    }
+
 }
