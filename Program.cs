@@ -15,6 +15,10 @@ namespace LinqedListPractice
                 bool L = fruit.StartsWith("L");
                 return L;
             }).ToList();
+            foreach (var f in LFruits)
+            {
+                Console.WriteLine(f);
+            }
 
             // Which of the following numbers are multiples of 4 or 6
             List<int> numbers = new List<int>()
@@ -40,6 +44,11 @@ namespace LinqedListPractice
                 bool isfourSixMultiples = (num % 4 == 0 || num % 6 == 0);
                 return isfourSixMultiples;
             }).ToList();
+
+            foreach (var num in fourSixMultiples)
+            {
+                Console.WriteLine(num);
+            }
 
             // Order these student names alphabetically, in descending order (Z to A)
             List<string> names = new List<string>()
@@ -74,6 +83,12 @@ namespace LinqedListPractice
                 .OrderByDescending(name => name)
                 .ToList();
 
+
+            foreach (var name in descend)
+            {
+                Console.WriteLine(name);
+            }
+
             // Build a collection of these numbers sorted in ascending order
             List<int> numbersCake = new List<int>()
             {
@@ -97,6 +112,11 @@ namespace LinqedListPractice
                 .OrderBy(numberOne => numberOne)
                 .ToList();
 
+            foreach (var num in ascend)
+            {
+                Console.WriteLine(num);
+            }
+
             // Output how many numbers are in this list
             List<int> burgers = new List<int>()
             {
@@ -118,6 +138,7 @@ namespace LinqedListPractice
 
             int count = burgers.Count();
 
+
             // How much money have we made?
             List<double> purchases = new List<double>()
             {
@@ -133,6 +154,8 @@ namespace LinqedListPractice
             };
 
             double presents = purchases.Sum();
+
+            Console.WriteLine($"I spent {purchases.Sum()}");
 
             // What is our most expensive product?
             List<double> prices = new List<double>()
@@ -181,9 +204,9 @@ namespace LinqedListPractice
                 return !isSquared;
             }).ToList();
 
-            foreach (int item in result)
+            foreach (var num in result)
             {
-                Console.WriteLine(item);
+                Console.WriteLine(num);
             }
 
             List<Customer> customers = new List<Customer>()
@@ -201,7 +224,7 @@ namespace LinqedListPractice
             };
 
             var groups = customers.Where(c => c.Balance >= 1_000_000)
-                .GroupBy(c => c.Bank);
+                .GroupBy(c => c.Bank).ToList();
 
             // key name is the bank name
             foreach (var group in groups)
@@ -210,7 +233,8 @@ namespace LinqedListPractice
 
                 foreach (Customer customer in group)
                 {
-                    Console.WriteLine($"****{customer.Name}");
+                    Console.WriteLine($"{customer.Name}");
+                    Console.WriteLine($"{customer.Balance}");
 
                 }
             }
